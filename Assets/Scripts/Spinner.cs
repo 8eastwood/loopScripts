@@ -4,7 +4,7 @@ public class Spinner : MonoBehaviour
 {
     [SerializeField] private int _speed;
 
-    void Update()
+    private void Update()
     {
         Spin();
     }
