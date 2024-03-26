@@ -2,16 +2,15 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-   
+    [SerializeField] private float _speed;
+
     private void Update()
     {
-        Move();
+        MoveForward();
     }
 
-    private void Move()
+    private void MoveForward()
     {
-        var nextPosition = transform.position;
-        nextPosition.z += 0.01f;
-        transform.position = nextPosition;
+        transform.Translate(Vector3.forward * _speed * Time.deltaTime);
     }
 }

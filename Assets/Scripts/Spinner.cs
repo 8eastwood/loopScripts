@@ -11,6 +11,6 @@ public class Spinner : MonoBehaviour
 
     private void Spin()
     {
-        transform.RotateAround(transform.position, transform.up, 2f  * _speed * Time.deltaTime);
+        transform.Rotate(0 * _speed, 5 * _speed, 0 * _speed);
     }
 }
